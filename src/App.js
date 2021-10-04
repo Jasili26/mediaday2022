@@ -1,7 +1,7 @@
 import './App.css';
 import './styles/nav.css'
 import { Switch, Route, Link } from "react-router-dom";
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 
 import AboutPage from './pages/AboutPage'
@@ -14,10 +14,12 @@ function App() {
   return (
     <div className="App">
 
-      <Navbar bg="success" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="success" variant="dark">
           <Navbar.Brand as={Link} to="/">
             <h3>Mediaday 2022</h3>
           </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
 
           <Nav defaultActiveKey="/home" className="me-auto">
             <Nav.Item>
@@ -36,6 +38,7 @@ function App() {
               <Nav.Link as={Link} to="/"><h4>Kirjaudu Sisään</h4></Nav.Link>
             </Nav.Item>
           </Nav>
+        </Navbar.Collapse>
       </Navbar>
 
       {/* A <Switch> looks through its children <Route>s and
