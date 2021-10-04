@@ -14,14 +14,18 @@ import Franz from "./components/About/PuhujaIMG/frans_tihverainen.jpg";
 import Ulrich from "./components/About/PuhujaIMG/Ulrich_Mors.jpg";
 import React from "react";
 
+
 function App() {
   return (
     <div className="App">
 
-      <Navbar bg="success" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="success" variant="dark">
           <Navbar.Brand as={Link} to="/">
             <h3>Mediaday 2022</h3>
           </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+
 
           <Nav defaultActiveKey="/home" className="me-auto">
             <Nav.Item>
@@ -40,6 +44,8 @@ function App() {
               <Nav.Link as={Link} to="/"><h4>Kirjaudu Sisään</h4></Nav.Link>
             </Nav.Item>
           </Nav>
+
+        </Navbar.Collapse>
       </Navbar>
 
       {/* A <Switch> looks through its children <Route>s and
