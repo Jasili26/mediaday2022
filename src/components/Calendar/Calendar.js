@@ -14,13 +14,14 @@ const Calendar = () => (
       initialView="timeGrid"
       headerToolbar={false}
       slotMinTime="10:00:00"
-      slotMaxTime="20:00:00"
-      height={600}
+      slotMaxTime="19:00:00"
+      height={550}
       views={{
+          timeFormat: 'H:mm',
         timeGrid: {
           visibleRange: {
-            start: "2021-09-21",
-            end: "2021-09-23",
+            start: "2022-04-01",
+            end: "2022-04-02",
           },
         },
       }}
@@ -31,7 +32,7 @@ const Calendar = () => (
         return {
           title: data.title,
           start: new Date(year, month - 1, day, hour, minute),
-          end: new Date(year, month - 1, day, hour + 2, minute),
+          end: new Date(year, month - 1, day, hour + 1, minute),
           url: `#/event/${data.videoUrl}`,
         };
       })}

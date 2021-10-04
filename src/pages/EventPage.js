@@ -45,10 +45,13 @@ const EventPage = () => {
             </WaitingForStream>
           </Col>
           <Col>
+            {eventResult.Title}
+            <br />
             Alkaa päivänä: {eventResult.startDate}
             <br />
             Alkaa klo: {eventResult.startTime}
             <br />
+
           </Col>
         </Row>
       </Container>

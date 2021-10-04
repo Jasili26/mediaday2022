@@ -1,8 +1,10 @@
 import "./about.css";
 import Franz from "./PuhujaIMG/frans_tihverainen.jpg";
-//import Mikko from "./PuhujaIMG/mikko_kodisoja.jpg";
+import Mikko from "./PuhujaIMG/mikko_kodisoja.jpg";
+import Sami from "./PuhujaIMG/sami_marttinen.jpg";
+import Ulrich from "./PuhujaIMG/Ulrich_Mors.jpg";
 import React from "react";
-//import { Card, Button } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 //import Hello from "../Hello/Hello";
 const About = ({ name }) => {
 
@@ -34,77 +36,66 @@ const About = ({ name }) => {
 
           <div className="container">
               <div className="row">
-
-
                   <div className="col-md-6">
-                      <hr></hr>
-                      <h4 className="text-center"><strong>Franz Tihverainen</strong></h4>
-                      <card>
-                          <div className="profile-card-4 text-center">
-                              <img src={Franz} alt="Logo" />
-                              <div className="profile-content">
-                                  <div className="profile-name">
-                                  </div>
-                                  <div className="profile-description">Erilainen urapolku - Frans Tihveräinen: Suoraan koulun penkiltä pitkän linjan AR-ammattilaiseksi. Frans kertoo omasta nousustaan AR-ammattilaiseksi, ja esittelee omat vinkkinsä yrittäjyydestä haaveileville opiskelijoille. Puheenvuoro esitetään suomeksi.
-                                  </div>
+                      <Card className="bg-dark text-white">
+                          <Card.Img src={Mikko} alt="Card image" />
+                          <Card.ImgOverlay>
 
-                              </div>
-
-                          </div>
-                      </card>
+                          </Card.ImgOverlay>
+                          <Card.Body>
+                              <Card.Title>Mikko Kodisoja, FIREFRAME</Card.Title>
+                              <Card.Text>
+                                  Yrityksen perustaja Mikko Kodisoja kertoo, miksi vaihtoi peliteollisuuden elokuvamaailmaan. Kuumana puheenaiheena Suomen ensimmäinen Hollywood-tason ledseinä-studio. Puheenvuoro esitetään englanniksi.
+                              </Card.Text>
+                          </Card.Body>
+                      </Card>
                   </div>
                   <div className="col-md-6">
-                      <hr></hr>
-                      <h4 className="text-center"><strong>Franz Tihverainen</strong></h4>
+                      <Card className="bg-dark text-white">
+                          <Card.Img src={Sami} alt="Card image" />
+                          <Card.ImgOverlay>
 
-                      <div className="profile-card-4 text-center">
-                          <img src={Franz} alt="Logo" />
-                          <div className="profile-content">
-                              <div className="profile-name">
-                              </div>
-                              <div className="profile-description">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                  elitr, sed diam nonumy eirmod tempor.
-                              </div>
+                          </Card.ImgOverlay>
+                          <Card.Body>
+                              <Card.Title>Sami Marttinen, SWAPPIE</Card.Title>
+                              <Card.Text>
+                                  Sami Marttinen esittelee Swappien tarinan, ja teknologian merkityksen yrityksen nousun taustalla. Puheenvuoro esitetään suomeksi.
 
-                          </div>
-
-                      </div>
+                              </Card.Text>
+                          </Card.Body>
+                      </Card>
                   </div>
               </div>
               <div className="row">
+
+
                   <div className="col-md-6">
-                      <hr></hr>
-                      <h4 className="text-center"><strong>Franz Tihverainen</strong></h4>
+                      <Card className="bg-dark text-white">
+                          <Card.Img src={Franz} alt="Card image" />
+                          <Card.ImgOverlay>
 
-                      <div className="profile-card-4 text-center">
-                          <img src={Franz} alt="Logo" />
-                          <div className="profile-content">
-                              <div className="profile-name">
-                              </div>
-                              <div className="profile-description">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                  elitr, sed diam nonumy eirmod tempor.
-                              </div>
-
-                          </div>
-                      </div>
-
+                          </Card.ImgOverlay>
+                          <Card.Body>
+                              <Card.Title>Frans Tihveräinen, FLYAR</Card.Title>
+                              <Card.Text>
+                                  Erilainen urapolku - Frans Tihveräinen: Suoraan koulun penkiltä pitkän linjan AR-ammattilaiseksi. Frans kertoo omasta nousustaan AR-ammattilaiseksi, ja esittelee omat vinkkinsä yrittäjyydestä haaveileville opiskelijoille. Puheenvuoro esitetään suomeksi.
+                              </Card.Text>
+                          </Card.Body>
+                      </Card>
                   </div>
                   <div className="col-md-6">
-                      <hr></hr>
-                      <h4 className="text-center"><strong>Franz Tihverainen</strong></h4>
+                      <Card className="bg-dark text-white">
+                          <Card.Img src={Ulrich} alt="Card image" />
+                          <Card.ImgOverlay>
 
-                      <div className="profile-card-4 text-center">
-                          <img src={Franz} alt="Logo" />
-                          <div className="profile-content">
-                              <div className="profile-name">
-                              </div>
-                              <div className="profile-description">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                  elitr, sed diam nonumy eirmod tempor.
-                              </div>
-
-                          </div>
-                      </div>
-
+                          </Card.ImgOverlay>
+                          <Card.Body>
+                              <Card.Title>Ulrich Mors, Sony Independent Expert</Card.Title>
+                              <Card.Text>
+                                  Ulrich Mors esittelee Sonyn uusimmat videokamerauutuudet ammattimaisten videotuotantojen käyttöön. Näkökulmana kameroiden käyttö eurooppalaisessa indie-elokuvatuotannossa, josta Ulrichilla on itsessään paljon kokemusta. Puheenvuoro esitetään englanniksi.
+                              </Card.Text>
+                          </Card.Body>
+                      </Card>
                   </div>
               </div>
           </div>

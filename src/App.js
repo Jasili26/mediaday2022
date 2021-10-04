@@ -1,7 +1,7 @@
 import './App.css';
 import './styles/nav.css'
 import { Switch, Route, Link } from "react-router-dom";
-import { Nav, Navbar } from 'react-bootstrap';
+import {Card, Nav, Navbar} from 'react-bootstrap';
 
 
 import AboutPage from './pages/AboutPage'
@@ -9,6 +9,10 @@ import PromoVideo from './pages/PromoVideo';
 import EventPage from './pages/EventPage';
 import SchedulePage from './pages/SchedulePage';
 import logo from './logo.svg';
+import mediaday from './mediadaysoft.png';
+import Franz from "./components/About/PuhujaIMG/frans_tihverainen.jpg";
+import Ulrich from "./components/About/PuhujaIMG/Ulrich_Mors.jpg";
+import React from "react";
 
 function App() {
   return (
@@ -52,22 +56,32 @@ function App() {
         </Route>
         <Route path="/event/:id" children={<EventPage />} />
         <Route path="/">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              Edit <code>src/App.js</code> and save to reload.
-            </p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
-          </header>
+          <AboutPage name="Tietoja" />
+
         </Route>
       </Switch>
+      <footer style={{background: "#198754", padding: "30px", marginTop: "75px"}}>
+        <div className="row">
+          <div className="col-md-6">
+              <h2>Mediaday 2022 logo</h2>
+          </div>
+
+
+          <div className="col-md-6" style={{color: "white"}}>
+            <h4>Yhteystiedot:</h4>
+            <p>Ota yhteyttä
+            Haluatko ottaa osaa tapahtumaan tai sinulla on muuta kysyttävää? Yhteydenotot ja tiedustelut puhelimitse tuottaja Päivi Pitkäseen 040 123 4567
+              tai sähköpostilla mediaday2021@metropolia.fi</p>
+            <h4>Järjestäjät:</h4>
+            <p>Mediadayn järjestää Metropolia Ammattikorkeakoulu yhteistyökumppaneiden kanssa.</p>
+            <h4>Medioille:</h4>
+            <p>Löydät Mediadayn lehdistötiedotteen täältä suomeksi ja englanniksi (julkaistaan 12/2021).</p>
+          </div>
+          <div className="col-md-4">
+
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
