@@ -1,0 +1,30 @@
+{
+    "events": [
+        {
+            "videoUrl": "mediaday-123",
+            "title": "MediaDay Live Koodaus",
+            "startTime": "12:00",
+            "startDate": "21.9.2021",
+            "streamUrl": "http://195.148.104.124:1935/jakelu/reacttunti/playlist.m3u8",
+            "streamVideoType": "application/x-mpegurl"
+        },
+        {
+            "videoUrl": "live",
+            "title": "Mediaday LIVE",
+            "startTime": "15:00",
+            "startDate": "21.9.2021",
+            "streamUrl": "http://195.148.104.124:1935/jakelu/toot/playlist.m3u8",
+            "streamVideoType": "application/x-mpegURL"
+        },
+        {
+            "videoUrl": "opiskelupaiva",
+            "title": "Opiskelupäivä",
+            "startTime": "14:30",
+            "startDate": "21.9.2021",
+            "streamUrl": "//vjs.zencdn.net/v/oceans.mp4",
+            "streamVideoType": "video/mp4",
+            "archiveVideoUrl": "//vjs.zencdn.net/v/oceans.mp4",
+            "archiveVideoType": "video/mp4"
+        }
+    ]
+}
