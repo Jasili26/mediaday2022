@@ -19,13 +19,12 @@ function App() {
   return (
     <div className="App">
 
-      <Navbar collapseOnSelect expand="lg" bg="success" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="success" variant="dark" sticky="top">
           <Navbar.Brand as={Link} to="/">
             <h3>Mediaday 2022</h3>
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-
 
           <Nav defaultActiveKey="/home" className="me-auto">
             <Nav.Item>
@@ -40,6 +39,8 @@ function App() {
             <Nav.Item>
               <Nav.Link as={Link} to="/event/live"><h4>Mediaday LIVE</h4></Nav.Link>
             </Nav.Item>
+          </Nav>
+          <Nav>
             <Nav.Item>
               <Nav.Link as={Link} to="/"><h4>Kirjaudu Sisään</h4></Nav.Link>
             </Nav.Item>
