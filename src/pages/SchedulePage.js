@@ -6,9 +6,9 @@ import Calendar from "../components/Calendar/Calendar";
 const SchedulePage = () => {
   return (
     <Container>
-      <h1 className="display-2">Event schedule</h1>
+      <h1 className="display-2">Kalenteri</h1>
       <Row className="justify-content-md-center">
-        <Col lg={6}>
+        <Col lg={7}>
           <Calendar />
         </Col>
       </Row>

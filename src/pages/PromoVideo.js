@@ -3,6 +3,7 @@ import Video from '../components/Video/Video';
 
 
 const PromoVideo = () => (
+
     <div>
         <Video />
     </div>

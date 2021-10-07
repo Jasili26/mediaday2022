@@ -7,6 +7,7 @@ import WaitingForStream from "../components/WaitingForStream/WaitingForStream";
 import eventData from "../data/events.json";
 
 const EventPage = () => {
+  document.title = "Tapahtuma"
   const { id } = useParams();
 
   const eventResult = eventData.events.find(({ videoUrl }) => videoUrl === id);
@@ -24,7 +25,7 @@ const EventPage = () => {
           </Col>
         </Row>
         <Row>
-          <Col lg={12}>
+          <Col md={12}>
             <WaitingForStream
               startDate={eventResult.startDate}
               startTime={eventResult.startTime}
@@ -37,23 +38,35 @@ const EventPage = () => {
                       type={eventResult.streamVideoType}
                     />
                   )}
+                  {streamHasStarted && (
+                      <h2>Tämä lähetys on jo alkanut joten se on livestream WOW</h2>
+                  )}
                   {!streamHasStarted && (
-                    <h2>Striimi alkaa joskus myöhemmin (countdown?)</h2>
+                      <h4>{eventResult.name}</h4>
+                  )}
+                  {!streamHasStarted && (
+                      <p>{eventResult.desc}</p>
+                  )}
+                  {!streamHasStarted && (
+                      <p>Puhe suorana lähetyksenä: {eventResult.startDate}: {eventResult.startTime} - {eventResult.endTime}</p>
+                  )}
+                  {!streamHasStarted && (
+                      <Video
+                          url={eventResult.placeholderVid}
+                          type={eventResult.placeholderType}
+                      />
                   )}
                 </>
               )}
             </WaitingForStream>
           </Col>
+        </Row>
           <Col>
             {eventResult.Title}
             <br />
-            Alkaa päivänä: {eventResult.startDate}
-            <br />
-            Alkaa klo: {eventResult.startTime}
-            <br />
+
 
           </Col>
-        </Row>
       </Container>
       <br />
       {/*  */}

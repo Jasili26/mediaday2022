@@ -21,7 +21,79 @@ h1 {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
+    border: 2px solid rgb(0 0 0 / 18%);
+    border-radius: 2.25rem;
     margin: 15px;
+
 }
+
+.card-img, .card-img-bottom {
+    border-bottom-right-radius: calc(0.25rem - 1px);
+    border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+.card-img, .card-img-top {
+    border-top-left-radius: calc(2.25rem - 1px);
+    border-top-right-radius: calc(2.25rem - 1px);
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+    width: 100%;
+    margin: 0px;
+}
+
+#coverpic {
+    width: 100%;
+    height: 435px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 500px;
+    bottom: 0px;
+    left: 0;
+    padding: 0rem;
+    border-radius: calc(.25rem - 1px);
+}
+
+
+
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgimg-1 {
+    background-image: url("./PuhujaIMG/testback.jpg");
+    height: 440px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+

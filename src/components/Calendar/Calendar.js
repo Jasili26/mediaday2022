@@ -7,6 +7,7 @@ import interactionPlugin from "@fullcalendar/interaction"; // needed for dayClic
 import "./calendar.css";
 import eventData from "../../data/events.json";
 
+
 const Calendar = () => (
   <div className="calendar-view">
     <FullCalendar
@@ -28,9 +29,11 @@ const Calendar = () => (
       events={eventData.events.map((data) => {
         const [day, month, year] = data.startDate.split(".").map(Number);
         const [hour, minute] = data.startTime.split(":").map(Number);
+          document.title = "Kalenteri"
+
 
         return {
-          title: data.title,
+          title: data.name + ' - ' + data.title,
           start: new Date(year, month - 1, day, hour, minute),
           end: new Date(year, month - 1, day, hour + 1, minute),
           url: `#/event/${data.videoUrl}`,
