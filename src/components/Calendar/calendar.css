@@ -10,3 +10,11 @@ a {
 .fc-event-main :hover {
     background-color: rgba(0, 110, 167, 0.5)
 }
+
+.fc .fc-col-header-cell-cushion {
+    display: inline-block;
+    padding: 2px 4px;
+}
+
+
+

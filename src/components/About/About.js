@@ -8,6 +8,8 @@ import cover from "./PuhujaIMG/sometest.jpg";
 import React from "react";
 import {Card, Button, Nav} from 'react-bootstrap';
 import {Link} from "react-router-dom";
+import Video from "../Video/Video";
+import CountDown from "../CountDown/CountDown";
 //import Hello from "../Hello/Hello";
 const About = ({ name }) => {
 
@@ -42,6 +44,9 @@ const About = ({ name }) => {
                   <h4> Rento ilmapiiri</h4>
                   <p>Hyväntuulinen tekemisen meininki. Meillä voi vapaasti kysellä ja ihmetellä.</p>
               </div>
+          </div>
+          <div>
+              <CountDown />
           </div>
           <header>
               <div className="container text-center">

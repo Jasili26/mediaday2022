@@ -16,7 +16,6 @@ import React from "react";
 function App() {
   return (
       <div className="App">
-
         <Navbar collapseOnSelect expand="lg" bg="success" variant="dark" sticky="top">
           <Navbar.Brand as={Link} to="/">
             <h3>Mediaday 2022</h3>
