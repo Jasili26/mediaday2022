@@ -9,17 +9,21 @@ import React from "react";
 import {Card, Button, Nav} from 'react-bootstrap';
 import {Link} from "react-router-dom";
 //import Hello from "../Hello/Hello";
+
+
 const About = ({ name }) => {
 
     document.title = "Tietoja"
 
   return (
+
       <div className="container">
           <div className="bgimg-1">
               <div className="caption">
                   <span className="border">Mediaday 2022</span>
               </div>
           </div>
+
           <Link to="event/live">
 
               <Button variant="success" size="lg">
@@ -27,7 +31,6 @@ const About = ({ name }) => {
               </Button>
 
           </Link>
-
 
           <div className="row">
               <div className="col-sm">
