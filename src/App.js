@@ -9,6 +9,7 @@ import PromoVideo from './pages/PromoVideo';
 import EventPage from './pages/EventPage';
 import SchedulePage from './pages/SchedulePage';
 import logo from './logo.svg';
+import colors from "./colors";
 
 import React from "react";
 
@@ -18,7 +19,7 @@ function App() {
       <div className="App">
         <Navbar collapseOnSelect expand="lg" bg="success" variant="dark" sticky="top">
           <Navbar.Brand as={Link} to="/">
-            <h3>Mediaday 2022</h3>
+            <h3>Logo</h3>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -43,7 +44,6 @@ function App() {
                 <Nav.Link as={Link} to="/"><h4>Kirjaudu Sisään</h4></Nav.Link>
               </Nav.Item>
             </Nav>
-
           </Navbar.Collapse>
         </Navbar>
 
