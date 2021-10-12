@@ -8,7 +8,9 @@ import AboutPage from './pages/AboutPage'
 import PromoVideo from './pages/PromoVideo';
 import EventPage from './pages/EventPage';
 import SchedulePage from './pages/SchedulePage';
-import logo from './logo.svg';
+import logo from './mdlogonen.png';
+import mdlogo from './mediadayl.svg';
+import plogo from './mediadaypng.png';
 
 import React from "react";
 
@@ -18,7 +20,12 @@ import React from "react";
         <div className="App">
           <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
             <Navbar.Brand as={Link} to="/">
-              <img src={require('./Mediadaylogo.png')}/>
+              <img src={plogo}
+                  alt=""
+                  height="35"
+                   left="5px"
+                  className="d-inline-block align-top"
+              />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -68,7 +75,7 @@ import React from "react";
           <footer style={{background: "#292b2c", padding: "30px", marginTop: "75px", color: "white"}}>
             <div className="row">
               <div className="col-md-6">
-                <img src={require('./Mediadaylogo.png')}/>
+                <img src={logo}/>
               </div>
 
 
