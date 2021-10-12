@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 const Clock = ({ timerDays, timerHours, timerMinutes, timerSeconds }) => {
     return (
         <Fragment>
-            <section className="timer-container">
+            <section className="timer-container" id="moimoi">
                 <section className="timer">
                     <div className="clock">
                         <section>

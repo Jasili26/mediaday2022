@@ -65,7 +65,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .fragment {
+    #moimoi {
         max-width: 30%;
     }
 }
