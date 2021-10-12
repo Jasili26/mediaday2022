@@ -3,8 +3,17 @@ import Franz from "./PuhujaIMG/fransbest.png";
 import Mikko from "./PuhujaIMG/mikkobest.png";
 import Sami from "./PuhujaIMG/samibest.png";
 import Ulrich from "./PuhujaIMG/ulrichbest.png";
-import Mika from "./PuhujaIMG/mikabest.png";
-import cover from "./PuhujaIMG/sometest.jpg";
+import Avita from "./SponsoriIMG/avita2.png";
+import Crestron from "./SponsoriIMG/crestron3.png";
+import fireframe from "./SponsoriIMG/fireframe.png";
+import flyar from "./SponsoriIMG/flyar.png";
+import swappie from "./SponsoriIMG/swappie.png";
+import fazer from "./SponsoriIMG/fazer.jpg";
+import sony from "./SponsoriIMG/sony.png";
+import panasonic from "./SponsoriIMG/panasonic.png";
+import trail from "./SponsoriIMG/trail.jpg";
+import metropolia from "./SponsoriIMG/metropolia2.png"
+
 import React from "react";
 import {Card, Button, Nav} from 'react-bootstrap';
 import {Link} from "react-router-dom";
@@ -24,7 +33,7 @@ const About = ({ name }) => {
           </div>
           <Link to="event/live">
 
-              <Button variant="success" size="lg">
+              <Button variant="info" size="lg">
                   LIVESTREAM
               </Button>
 
@@ -51,7 +60,7 @@ const About = ({ name }) => {
           <header>
               <div className="container text-center">
                   <div className="blocker">
-                      <h1 style={{color: "white"}}><b>Puhujat</b></h1>
+                      <h1 className="display-6" style={{color: "white"}}>Puhujat</h1>
                   </div>
               </div>
           </header>
@@ -147,11 +156,55 @@ const About = ({ name }) => {
               </div>
                   <Link to="/schedule">
                       <div className="d-grid gap-1">
-                  <Button variant="success" size="md">
+                  <Button variant="info" size="md">
                       Kalenteri
                   </Button>
                       </div>
                   </Link>
+
+
+          </div>
+          <header>
+              <div className="container text-center">
+                  <div className="blocker">
+                      <h1 className="display-6" style={{color: "white", margin: "10px"}}>Yhteistyökumppanit</h1>
+                  </div>
+              </div>
+          </header>
+          <div className="container">
+              <div className="row">
+                  <div className="col-md-3">
+                      <Card.Img src={Crestron} alt="Card image" />
+                  </div>
+                  <div className="col-md-3">
+                      <Card.Img src={sony} alt="Card image" />
+                  </div>
+                  <div className="col-md-3">
+                      <Card.Img src={swappie} alt="Card image" />
+                  </div>
+                  <div className="col-md-3">
+                      <Card.Img src={fazer} alt="Card image" />
+                  </div>
+                  <div className="col-md-3">
+                      <Card.Img src={Avita} alt="Card image" />
+                  </div>
+                  <div className="col-md-3">
+                      <Card.Img src={panasonic} alt="Card image" />
+                  </div>
+                  <div className="col-md-3">
+                      <Card.Img src={trail} alt="Card image" />
+                  </div>
+                  <div className="col-md-3">
+                      <Card.Img src={flyar} alt="Card image" />
+                  </div>
+                  <div className="col-md-3">
+                      <Card.Img src={fireframe} alt="Card image" />
+                  </div>
+                  <div className="col-md-3">
+                      <Card.Img src={metropolia} alt="Card image" />
+                  </div>
+              </div>
+
 
 
           </div>
