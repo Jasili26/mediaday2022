@@ -12,83 +12,84 @@ import logo from './logo.svg';
 
 import React from "react";
 
+  function App() {
 
-function App() {
-  return (
-      <div className="App">
-        <Navbar collapseOnSelect expand="lg" bg="success" variant="dark" sticky="top">
-          <Navbar.Brand as={Link} to="/">
-            <h3>Mediaday 2022</h3>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
+    return (
+        <div className="App">
+          <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
+            <Navbar.Brand as={Link} to="/">
+              <img src={require('./Mediadaylogo.png')}/>
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+            <Navbar.Collapse id="responsive-navbar-nav">
 
 
-            <Nav defaultActiveKey="/home" className="me-auto">
-              <Nav.Item>
-                <Nav.Link as={Link} to="/about"><h4>Tietoja</h4></Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link as={Link} to="/schedule"><h4>Kalenteri</h4></Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link as={Link} to="/promovideo"><h4>Promo</h4></Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link as={Link} to="/event/live"><h4>Mediaday LIVE</h4></Nav.Link>
-              </Nav.Item>
-            </Nav>
-            <Nav>
-              <Nav.Item>
-                <Nav.Link as={Link} to="/"><h4>Kirjaudu Sisään</h4></Nav.Link>
-              </Nav.Item>
-            </Nav>
+              <Nav defaultActiveKey="/home" className="me-auto">
+                <Nav.Item>
+                  <Nav.Link as={Link} to="/about"><h4>Tietoja</h4></Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link as={Link} to="/schedule"><h4>Kalenteri</h4></Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link as={Link} to="/promovideo"><h4>Promo</h4></Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link as={Link} to="/event/live"><h4>Live</h4></Nav.Link>
+                </Nav.Item>
+              </Nav>
+              <Nav>
+                <Nav.Item>
+                  <Nav.Link id="login" as={Link} to="/"><h4>Kirjaudu sisään</h4></Nav.Link>
+                </Nav.Item>
+              </Nav>
 
-          </Navbar.Collapse>
-        </Navbar>
+            </Navbar.Collapse>
+          </Navbar>
 
-        {/* A <Switch> looks through its children <Route>s and
+          {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/about">
-            <AboutPage name="Tietoja" />
-          </Route>
-          <Route path="/schedule">
-            <SchedulePage />
-          </Route>
-          <Route path="/promovideo">
-            <PromoVideo />
-          </Route>
-          <Route path="/event/:id" children={<EventPage />} />
-          <Route path="/">
-            <AboutPage name="Tietoja" />
+          <Switch>
+            <Route path="/about">
+              <AboutPage name="Tietoja"/>
+            </Route>
+            <Route path="/schedule">
+              <SchedulePage/>
+            </Route>
+            <Route path="/promovideo">
+              <PromoVideo/>
+            </Route>
+            <Route path="/event/:id" children={<EventPage/>}/>
+            <Route path="/">
+              <AboutPage name="Tietoja"/>
 
-          </Route>
-        </Switch>
-        <footer style={{background: "#198754", padding: "30px", marginTop: "75px"}}>
-          <div className="row">
-            <div className="col-md-6">
-              <h2>Mediaday 2022 logo</h2>
+            </Route>
+          </Switch>
+          <footer style={{background: "#292b2c", padding: "30px", marginTop: "75px", color: "white"}}>
+            <div className="row">
+              <div className="col-md-6">
+                <img src={require('./Mediadaylogo.png')}/>
+              </div>
+
+
+              <div className="col-md-6" style={{color: "white"}}>
+                <h4>Yhteystiedot:</h4>
+                <p>Ota yhteyttä
+                  Haluatko ottaa osaa tapahtumaan tai sinulla on muuta kysyttävää? Yhteydenotot ja tiedustelut
+                  puhelimitse tuottaja Päivi Pitkäseen 040 123 4567
+                  tai sähköpostilla mediaday2021@metropolia.fi</p>
+                <h4>Järjestäjät:</h4>
+                <p>Mediadayn järjestää Metropolia Ammattikorkeakoulu yhteistyökumppaneiden kanssa.</p>
+                <h4>Medioille:</h4>
+                <p>Löydät Mediadayn lehdistötiedotteen täältä suomeksi ja englanniksi (julkaistaan 12/2021).</p>
+              </div>
+              <div className="col-md-4">
+
+              </div>
             </div>
-
-
-            <div className="col-md-6" style={{color: "white"}}>
-              <h4>Yhteystiedot:</h4>
-              <p>Ota yhteyttä
-                Haluatko ottaa osaa tapahtumaan tai sinulla on muuta kysyttävää? Yhteydenotot ja tiedustelut puhelimitse tuottaja Päivi Pitkäseen 040 123 4567
-                tai sähköpostilla mediaday2021@metropolia.fi</p>
-              <h4>Järjestäjät:</h4>
-              <p>Mediadayn järjestää Metropolia Ammattikorkeakoulu yhteistyökumppaneiden kanssa.</p>
-              <h4>Medioille:</h4>
-              <p>Löydät Mediadayn lehdistötiedotteen täältä suomeksi ja englanniksi (julkaistaan 12/2021).</p>
-            </div>
-            <div className="col-md-4">
-
-            </div>
-          </div>
-        </footer>
-      </div>
-  );
-}
+          </footer>
+        </div>
+    );
+  }
 
 export default App;
