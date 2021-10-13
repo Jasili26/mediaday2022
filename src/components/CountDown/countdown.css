@@ -7,7 +7,7 @@
     /*    background: linear-gradient(270deg, #051817, #0e3839);*/
     background: transparent;
     height: 180px;
-    width: 360px;
+    width: 200px;
     color: #000000;
     text-shadow: 1px 1px 7px;
     border-radius: 1px;
@@ -64,8 +64,8 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
-    #moimoi {
-        max-width: 30%;
+@media only screen and (max-width: 600px) {
+    .clock section p {
+        font-size: 2.5em;
     }
 }

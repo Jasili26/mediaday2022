@@ -19,6 +19,7 @@ import {Card, Button, Nav} from 'react-bootstrap';
 import {Link} from "react-router-dom";
 import Video from "../Video/Video";
 import CountDown from "../CountDown/CountDown";
+import plogo from "../../mediadaypng.png";
 //import Hello from "../Hello/Hello";
 const About = ({ name }) => {
 
@@ -28,12 +29,17 @@ const About = ({ name }) => {
       <div className="container">
           <div className="bgimg-1">
               <div className="caption">
-                  <span className="border">Mediaday 2022</span>
+                  {/*<span className="border">Mediaday 2022</span>*/}
+                  <img src={plogo}
+                       alt="MediaDaylogo"
+                       height="50"
+                       className="d-inline-block align-top"
+                  />
               </div>
           </div>
           <Link to="event/live">
 
-              <Button variant="info" size="lg">
+              <Button variant="danger" size="lg">
                   LIVESTREAM
               </Button>
 
@@ -73,7 +79,7 @@ const About = ({ name }) => {
                           <Card.ImgOverlay>
                               <Link to="event/mikko">
 
-                                  <Button variant="success" size="sm">
+                                  <Button variant="danger" size="sm">
                                       Lisätietoja
                                   </Button>
 
@@ -94,7 +100,7 @@ const About = ({ name }) => {
                           <Card.ImgOverlay>
                               <Link to="event/sami">
 
-                                  <Button variant="success" size="sm">
+                                  <Button variant="danger" size="sm">
                                       Lisätietoja
                                   </Button>
 
@@ -117,7 +123,7 @@ const About = ({ name }) => {
                           <Card.ImgOverlay>
                               <Link to="event/franz">
 
-                                  <Button variant="success" size="sm">
+                                  <Button variant="danger" size="sm">
                                       Lisätietoja
                                   </Button>
 
@@ -138,7 +144,7 @@ const About = ({ name }) => {
                           <Card.ImgOverlay>
                               <Link to="event/ulrich">
 
-                                  <Button variant="success" size="sm">
+                                  <Button variant="danger" size="sm">
                                       Lisätietoja
                                   </Button>
 
@@ -156,7 +162,7 @@ const About = ({ name }) => {
               </div>
                   <Link to="/schedule">
                       <div className="d-grid gap-1">
-                  <Button variant="info" size="md">
+                  <Button variant="danger" size="md">
                       Kalenteri
                   </Button>
                       </div>

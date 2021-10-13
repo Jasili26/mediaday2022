@@ -6,6 +6,7 @@ import WaitingForStream from "../components/WaitingForStream/WaitingForStream";
 import CountDown from "../components/CountDown/CountDown";
 import eventData from "../data/events.json";
 
+
 const EventPage = () => {
   document.title = "Tapahtuma"
   const { id } = useParams();
@@ -24,7 +25,7 @@ const EventPage = () => {
 
           </Col>
         </Row>
-        <Row style={{backgroundColor: "#198754", margin: "2px"}}>
+        <Row style={{backgroundColor: "#1ee727", margin: "2px"}}>
           <Col md={12}>
             <WaitingForStream
               startDate={eventResult.startDate}
@@ -39,16 +40,16 @@ const EventPage = () => {
                           <img style={{margin: "15px"}} width="140px" height="140px" src={eventResult.pic}/>
                       )}
                       {streamHasStarted && (
-                          <h3 style={{color: "white"}}>{eventResult.name}</h3>
+                          <h3 style={{color: "black"}}>{eventResult.name}</h3>
                       )}
                     </Col>
                     <Col md={8}>
                       {streamHasStarted && (
-                          <h2 className="display-6" style={{color: "white", backgroundColor: "rgb(0, 0, 0, 0.1)"}}>{eventResult.title}</h2>
+                          <h2 className="display-6" style={{color: "black", backgroundColor: "rgb(0, 0, 0, 0.1)"}}>{eventResult.title}</h2>
                       )}
 
                       {streamHasStarted && (
-                          <p style={{color: "white"}}>{eventResult.desc}</p>
+                          <p style={{color: "black"}}>{eventResult.desc}</p>
                       )}
                     </Col>
 
@@ -60,7 +61,7 @@ const EventPage = () => {
                     />
                   )}
                   {streamHasStarted && (
-                      <h2 style={{color: "white"}}>LIVE</h2>
+                      <h2 style={{color: "black"}}>LIVE</h2>
                   )}
                   <Row>
                     <Col md={3} style={{margin: "15px"}}>

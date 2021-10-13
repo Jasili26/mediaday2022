@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
 .App {
   text-align: center;
@@ -29,11 +30,27 @@
   color: #61dafb;
 }
 
+#navbar1 {
+  padding-left: 10px;
+  font-family: 'Michroma', sans-serif;
+}
+
+.navtext {
+  padding-top: 11px;
+  font-size: 21px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .navtext {
+    padding-top: 1px;
   }
 }
