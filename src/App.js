@@ -1,7 +1,7 @@
 import './App.css';
 import './styles/nav.css'
 import { Switch, Route, Link } from "react-router-dom";
-import {Card, Nav, Navbar} from 'react-bootstrap';
+import {Card, Image, Nav, Navbar} from 'react-bootstrap';
 
 
 import AboutPage from './pages/AboutPage'
@@ -10,6 +10,9 @@ import EventPage from './pages/EventPage';
 import SchedulePage from './pages/SchedulePage';
 import logo from './mdlogonen.png';
 import plogo from './mediadaypng.png';
+import facebooklogo from './facebookicon.png';
+import instagramlogo from './instagramicon.png';
+import twitterlogo from './twittericon.png';
 
 import React from "react";
 
@@ -86,6 +89,25 @@ function App() {
               <p>Mediadayn järjestää Metropolia Ammattikorkeakoulu yhteistyökumppaneiden kanssa.</p>
               <h4>Medioille:</h4>
               <p>Löydät Mediadayn lehdistötiedotteen täältä suomeksi ja englanniksi (julkaistaan 12/2021).</p>
+
+              <a target="_blank" href="https://www.facebook.com/">
+                <Image
+                    alt="Facebook ikoni"
+                    height="53"
+                    src={facebooklogo} className="facebookIcon" />
+              </a>
+              <a target="_blank" href="https://www.instagram.com/">
+                <Image
+                    alt="Instagram ikoni"
+                    height="55"
+                    src={instagramlogo} className="instagramIcon" />
+              </a>
+              <a target="_blank" href="https://twitter.com/">
+                <Image
+                    alt="Twitter ikoni"
+                    height="55"
+                    src={twitterlogo} className="twitterIcon" />
+              </a>
             </div>
             <div className="col-md-4">
 
