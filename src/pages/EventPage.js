@@ -3,6 +3,7 @@ import { Col, Container, Row, Card } from "react-bootstrap";
 import { useParams } from "react-router";
 import Video from "../components/Video/Video";
 import WaitingForStream from "../components/WaitingForStream/WaitingForStream";
+import StreamHasEnded from "../components/StreamHasEnded/StreamHasEnded";
 import CountDown from "../components/CountDown/CountDown";
 import eventData from "../data/events.json";
 
@@ -53,15 +54,8 @@ const EventPage = () => {
                     </Col>
 
                   </Row>
-                  {streamHasStarted && (
-                    <Video
-                      url={eventResult.streamUrl}
-                      type={eventResult.streamVideoType}
-                    />
-                  )}
-                  {streamHasStarted && (
-                      <h2 style={{color: "white"}}>LIVE</h2>
-                  )}
+
+
                   <Row>
                     <Col md={3} style={{margin: "15px"}}>
                   {!streamHasStarted && (
@@ -82,23 +76,54 @@ const EventPage = () => {
                   {!streamHasStarted && (
                       <p style={{color: "white"}}>Puhe suorana lähetyksenä: {eventResult.startDate}: {eventResult.startTime} - {eventResult.endTime}</p>
                   )}
+
                     </Col>
 
                   </Row>
+                  <StreamHasEnded
+                      startDate={eventResult.startDate}
+                      endTime={eventResult.endTime}
+                  >
+                    {(streamHasEnded) => (
+                        <>
                   {!streamHasStarted && (
                       <Video
                           url={eventResult.placeholderVid}
                           type={eventResult.placeholderType}
                       />
                   )}
+                  {streamHasStarted && !streamHasEnded &&(
+                      <Video
+                          url={eventResult.streamUrl}
+                          type={eventResult.streamVideoType}
+                      />
+                  )}
+                  {streamHasStarted && !streamHasEnded &&(
+                      <h2 style={{color: "white"}}>LIVE</h2>
+                  )}
+                  {streamHasStarted && streamHasEnded &&(
+                      <Video
+                          url={eventResult.EndedVid}
+                          type={eventResult.EndedType}
+                      />
+                  )}
+                  {streamHasStarted && streamHasEnded &&(
+                      <h2 style={{color: "white"}}>Kooste</h2>
+                  )}
                   {!streamHasStarted && (
                       <p style={{color: "white"}}>Mediaday 2022</p>
                   )}
+                        </>
+                    )}
+                  </StreamHasEnded>
                 </>
+
               )}
             </WaitingForStream>
           </Col>
         </Row>
+
+
           <Col>
             {eventResult.Title}
             <br />

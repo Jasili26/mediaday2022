@@ -4,11 +4,11 @@ a {
     text-decoration: none;
 }
 .fc-event-main {
-    background-color: rgba(0, 110, 167, 0.9);
+    background-color: #0D6F3B;
     border: solid 1px;
 }
 .fc-event-main :hover {
-    background-color: rgba(0, 110, 167, 0.5)
+    background-color: #0b572f
 }
 
 .fc .fc-col-header-cell-cushion {
