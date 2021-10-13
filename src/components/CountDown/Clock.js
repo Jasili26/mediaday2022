@@ -3,27 +3,27 @@ import React, { Fragment } from "react";
 const Clock = ({ timerDays, timerHours, timerMinutes, timerSeconds }) => {
     return (
         <Fragment>
-            <section className="timer-container">
+            <section className="timer-container" id="moimoi">
                 <section className="timer">
                     <div className="clock">
                         <section>
                             <p>{timerDays}</p>
-                            <small>Days</small>
+                            <small>vrk</small>
                         </section>
                         <span>:</span>
                         <section>
                             <p>{timerHours}</p>
-                            <small>Hours</small>
+                            <small>t</small>
                         </section>{" "}
                         <span>:</span>
                         <section>
                             <p>{timerMinutes}</p>
-                            <small>Minutes</small>
+                            <small>min</small>
                         </section>{" "}
                         <span>:</span>
                         <section>
                             <p>{timerSeconds}</p>
-                            <small>Seconds</small>
+                            <small>sek</small>
                         </section>
                     </div>
                 </section>

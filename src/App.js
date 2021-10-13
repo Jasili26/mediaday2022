@@ -8,19 +8,25 @@ import AboutPage from './pages/AboutPage'
 import PromoVideo from './pages/PromoVideo';
 import EventPage from './pages/EventPage';
 import SchedulePage from './pages/SchedulePage';
-import logo from './logo.svg';
+import logo from './mdlogonen.png';
+import plogo from './mediadaypng.png';
 
 import React from "react";
 
-
 function App() {
+
   return (
       <div className="App">
-        <Navbar collapseOnSelect expand="lg" bg="success" variant="dark" sticky="top">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
           <Navbar.Brand as={Link} to="/">
-            <h3>Mediaday 2022</h3>
+            <img src={plogo}
+                 alt=""
+                 height="35"
+                 left="5px"
+                 className="d-inline-block align-top"
+            />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
           <Navbar.Collapse id="responsive-navbar-nav">
 
 
@@ -35,12 +41,12 @@ function App() {
                 <Nav.Link as={Link} to="/promovideo"><h4>Promo</h4></Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/event/live"><h4>Mediaday LIVE</h4></Nav.Link>
+                <Nav.Link as={Link} to="/event/live"><h4>Live</h4></Nav.Link>
               </Nav.Item>
             </Nav>
             <Nav>
               <Nav.Item>
-                <Nav.Link as={Link} to="/"><h4>Kirjaudu Sisään</h4></Nav.Link>
+                <Nav.Link id="login" as={Link} to="/"><h4>Kirjaudu sisään</h4></Nav.Link>
               </Nav.Item>
             </Nav>
 
@@ -51,31 +57,32 @@ function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/about">
-            <AboutPage name="Tietoja" />
+            <AboutPage name="Tietoja"/>
           </Route>
           <Route path="/schedule">
-            <SchedulePage />
+            <SchedulePage/>
           </Route>
           <Route path="/promovideo">
-            <PromoVideo />
+            <PromoVideo/>
           </Route>
-          <Route path="/event/:id" children={<EventPage />} />
+          <Route path="/event/:id" children={<EventPage/>}/>
           <Route path="/">
-            <AboutPage name="Tietoja" />
+            <AboutPage name="Tietoja"/>
 
           </Route>
         </Switch>
-        <footer style={{background: "#198754", padding: "30px", marginTop: "75px"}}>
+        <footer style={{background: "#292b2c", padding: "30px", marginTop: "75px", color: "white"}}>
           <div className="row">
             <div className="col-md-6">
-              <h2>Mediaday 2022 logo</h2>
+              <img src={logo}/>
             </div>
 
 
             <div className="col-md-6" style={{color: "white"}}>
               <h4>Yhteystiedot:</h4>
               <p>Ota yhteyttä
-                Haluatko ottaa osaa tapahtumaan tai sinulla on muuta kysyttävää? Yhteydenotot ja tiedustelut puhelimitse tuottaja Päivi Pitkäseen 040 123 4567
+                Haluatko ottaa osaa tapahtumaan tai sinulla on muuta kysyttävää? Yhteydenotot ja tiedustelut
+                puhelimitse tuottaja Päivi Pitkäseen 040 123 4567
                 tai sähköpostilla mediaday2021@metropolia.fi</p>
               <h4>Järjestäjät:</h4>
               <p>Mediadayn järjestää Metropolia Ammattikorkeakoulu yhteistyökumppaneiden kanssa.</p>
