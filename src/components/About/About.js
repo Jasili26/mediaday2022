@@ -19,201 +19,207 @@ import {Card, Button, Nav} from 'react-bootstrap';
 import {Link} from "react-router-dom";
 import Video from "../Video/Video";
 import CountDown from "../CountDown/CountDown";
+import plogo from "../../mediadaypng.png";
 //import Hello from "../Hello/Hello";
 const About = ({ name }) => {
 
     document.title = "Tietoja"
 
-  return (
-      <div className="container">
-          <div className="bgimg-1">
-              <div className="caption">
-                  <span className="border">Mediaday 2022</span>
-              </div>
-          </div>
-          <Link to="event/live">
+    return (
+        <div className="container">
+            <div className="bgimg-1">
+                <div className="caption">
+                    {/*<span className="border">Mediaday 2022</span>*/}
+                    <img src={plogo}
+                         alt="MediaDaylogo"
+                         height="50"
+                         className="d-inline-block align-top"
+                    />
+                </div>
+            </div>
+            <Link to="event/live">
 
-              <Button variant="info" size="lg">
-                  LIVESTREAM
-              </Button>
+                <Button variant="danger" size="lg">
+                    LIVESTREAM
+                </Button>
 
-          </Link>
-
-
-          <div className="row">
-              <div className="col-sm">
-                 <h4> Puhujia eri teollisuudenaloilta </h4>
-                  <p>Huipputason ammattilaisten puheenvuoroja, mukana onta rautaista puhujaa monelta mediakentän osa-alueelta.</p>
-              </div>
-              <div className="col-sm">
-                 <h4> Mediaday yhdistää</h4>
-                  <p>Mediaday tuo opiskelijat ja yritysmaailman yhteen. Näet uusimmat jutut ja tutustu ammattilaisten maailmaan.</p>
-              </div>
-              <div className="col-sm">
-                  <h4> Rento ilmapiiri</h4>
-                  <p>Hyväntuulinen tekemisen meininki. Meillä voi vapaasti kysellä ja ihmetellä.</p>
-              </div>
-          </div>
-          <div>
-              <CountDown />
-          </div>
-          <header>
-              <div className="container text-center">
-                  <div className="blocker">
-                      <h1 className="display-6" style={{color: "white"}}>Puhujat</h1>
-                  </div>
-              </div>
-          </header>
-
-          <div className="container">
-              <div className="row">
-                  <div className="col-md-3">
-                      <Card className="bg-dark text-white">
-                          <Card.Img src={Mikko} alt="Card image" />
-                          <Card.ImgOverlay>
-                              <Link to="event/mikko">
-
-                                  <Button variant="success" size="sm">
-                                      Lisätietoja
-                                  </Button>
-
-                              </Link>
-
-                          </Card.ImgOverlay>
-                          <Card.Body>
-                              <Card.Title>Mikko Kodisoja</Card.Title>
-                              <Card.Text>
-                                  1.4.2022 Kello 10:00
-                              </Card.Text>
-                          </Card.Body>
-                      </Card>
-                  </div>
-                  <div className="col-md-3">
-                      <Card className="bg-dark text-white">
-                          <Card.Img src={Sami} alt="Card image" />
-                          <Card.ImgOverlay>
-                              <Link to="event/sami">
-
-                                  <Button variant="success" size="sm">
-                                      Lisätietoja
-                                  </Button>
-
-                              </Link>
-
-                          </Card.ImgOverlay>
-                          <Card.Body>
-                              <Card.Title>Sami Marttinen</Card.Title>
-                              <Card.Text>
-                                  1.4.2022 Kello 11:00
-
-                              </Card.Text>
-                          </Card.Body>
-
-                      </Card>
-                  </div>
-                  <div className="col-md-3">
-                      <Card className="bg-dark text-white">
-                          <Card.Img src={Franz} alt="Card image" />
-                          <Card.ImgOverlay>
-                              <Link to="event/franz">
-
-                                  <Button variant="success" size="sm">
-                                      Lisätietoja
-                                  </Button>
-
-                              </Link>
-
-                          </Card.ImgOverlay>
-                          <Card.Body>
-                              <Card.Title>Frans Tihveräinen</Card.Title>
-                              <Card.Text>
-                                  1.4.2022 Kello 12:00
-                              </Card.Text>
-                          </Card.Body>
-                      </Card>
-                  </div>
-                  <div className="col-md-3">
-                      <Card className="bg-dark text-white">
-                          <Card.Img src={Ulrich} alt="Card image" />
-                          <Card.ImgOverlay>
-                              <Link to="event/ulrich">
-
-                                  <Button variant="success" size="sm">
-                                      Lisätietoja
-                                  </Button>
-
-                              </Link>
-
-                          </Card.ImgOverlay>
-                          <Card.Body>
-                              <Card.Title>Ulrich Mors</Card.Title>
-                              <Card.Text>
-                                  1.4.2022 Kello 13:00
-                              </Card.Text>
-                          </Card.Body>
-                      </Card>
-                  </div>
-              </div>
-                  <Link to="/schedule">
-                      <div className="d-grid gap-1">
-                  <Button variant="info" size="md">
-                      Kalenteri
-                  </Button>
-                      </div>
-                  </Link>
+            </Link>
 
 
-          </div>
-          <header>
-              <div className="container text-center">
-                  <div className="blocker">
-                      <h1 className="display-6" style={{color: "white", margin: "10px"}}>Yhteistyökumppanit</h1>
-                  </div>
-              </div>
-          </header>
-          <div className="container">
-              <div className="row">
-                  <div className="col-md-3">
-                      <Card.Img src={Crestron} alt="Card image" />
-                  </div>
-                  <div className="col-md-3">
-                      <Card.Img src={sony} alt="Card image" />
-                  </div>
-                  <div className="col-md-3">
-                      <Card.Img src={swappie} alt="Card image" />
-                  </div>
-                  <div className="col-md-3">
-                      <Card.Img src={fazer} alt="Card image" />
-                  </div>
-                  <div className="col-md-3">
-                      <Card.Img src={Avita} alt="Card image" />
-                  </div>
-                  <div className="col-md-3">
-                      <Card.Img src={panasonic} alt="Card image" />
-                  </div>
-                  <div className="col-md-3">
-                      <Card.Img src={trail} alt="Card image" />
-                  </div>
-                  <div className="col-md-3">
-                      <Card.Img src={flyar} alt="Card image" />
-                  </div>
-                  <div className="col-md-3">
-                      <Card.Img src={fireframe} alt="Card image" />
-                  </div>
-                  <div className="col-md-3">
-                      <Card.Img src={metropolia} alt="Card image" />
-                  </div>
-              </div>
+            <div className="row">
+                <div className="col-sm">
+                    <h4> Puhujia eri teollisuudenaloilta </h4>
+                    <p>Huipputason ammattilaisten puheenvuoroja, mukana onta rautaista puhujaa monelta mediakentän osa-alueelta.</p>
+                </div>
+                <div className="col-sm">
+                    <h4> Mediaday yhdistää</h4>
+                    <p>Mediaday tuo opiskelijat ja yritysmaailman yhteen. Näet uusimmat jutut ja tutustu ammattilaisten maailmaan.</p>
+                </div>
+                <div className="col-sm">
+                    <h4> Rento ilmapiiri</h4>
+                    <p>Hyväntuulinen tekemisen meininki. Meillä voi vapaasti kysellä ja ihmetellä.</p>
+                </div>
+            </div>
+            <div>
+                <CountDown />
+            </div>
+            <header>
+                <div className="container text-center">
+                    <div className="blocker">
+                        <h1 className="display-6" style={{color: "white"}}>Puhujat</h1>
+                    </div>
+                </div>
+            </header>
+
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-3">
+                        <Card className="bg-dark text-white">
+                            <Card.Img src={Mikko} alt="Card image" />
+                            <Card.ImgOverlay>
+                                <Link to="event/mikko">
+
+                                    <Button variant="danger" size="sm">
+                                        Lisätietoja
+                                    </Button>
+
+                                </Link>
+
+                            </Card.ImgOverlay>
+                            <Card.Body>
+                                <Card.Title>Mikko Kodisoja</Card.Title>
+                                <Card.Text>
+                                    1.4.2022 Kello 10:00
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col-md-3">
+                        <Card className="bg-dark text-white">
+                            <Card.Img src={Sami} alt="Card image" />
+                            <Card.ImgOverlay>
+                                <Link to="event/sami">
+
+                                    <Button variant="danger" size="sm">
+                                        Lisätietoja
+                                    </Button>
+
+                                </Link>
+
+                            </Card.ImgOverlay>
+                            <Card.Body>
+                                <Card.Title>Sami Marttinen</Card.Title>
+                                <Card.Text>
+                                    1.4.2022 Kello 11:00
+
+                                </Card.Text>
+                            </Card.Body>
+
+                        </Card>
+                    </div>
+                    <div className="col-md-3">
+                        <Card className="bg-dark text-white">
+                            <Card.Img src={Franz} alt="Card image" />
+                            <Card.ImgOverlay>
+                                <Link to="event/franz">
+
+                                    <Button variant="danger" size="sm">
+                                        Lisätietoja
+                                    </Button>
+
+                                </Link>
+
+                            </Card.ImgOverlay>
+                            <Card.Body>
+                                <Card.Title>Frans Tihveräinen</Card.Title>
+                                <Card.Text>
+                                    1.4.2022 Kello 12:00
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col-md-3">
+                        <Card className="bg-dark text-white">
+                            <Card.Img src={Ulrich} alt="Card image" />
+                            <Card.ImgOverlay>
+                                <Link to="event/ulrich">
+
+                                    <Button variant="danger" size="sm">
+                                        Lisätietoja
+                                    </Button>
+
+                                </Link>
+
+                            </Card.ImgOverlay>
+                            <Card.Body>
+                                <Card.Title>Ulrich Mors</Card.Title>
+                                <Card.Text>
+                                    1.4.2022 Kello 13:00
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                </div>
+                <Link to="/schedule">
+                    <div className="d-grid gap-1">
+                        <Button variant="danger" size="md">
+                            Kalenteri
+                        </Button>
+                    </div>
+                </Link>
+
+
+            </div>
+            <header>
+                <div className="container text-center">
+                    <div className="blocker">
+                        <h1 className="display-6" style={{color: "white", margin: "10px"}}>Yhteistyökumppanit</h1>
+                    </div>
+                </div>
+            </header>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-3">
+                        <Card.Img src={Crestron} alt="Card image" />
+                    </div>
+                    <div className="col-md-3">
+                        <Card.Img src={sony} alt="Card image" />
+                    </div>
+                    <div className="col-md-3">
+                        <Card.Img src={swappie} alt="Card image" />
+                    </div>
+                    <div className="col-md-3">
+                        <Card.Img src={fazer} alt="Card image" />
+                    </div>
+                    <div className="col-md-3">
+                        <Card.Img src={Avita} alt="Card image" />
+                    </div>
+                    <div className="col-md-3">
+                        <Card.Img src={panasonic} alt="Card image" />
+                    </div>
+                    <div className="col-md-3">
+                        <Card.Img src={trail} alt="Card image" />
+                    </div>
+                    <div className="col-md-3">
+                        <Card.Img src={flyar} alt="Card image" />
+                    </div>
+                    <div className="col-md-3">
+                        <Card.Img src={fireframe} alt="Card image" />
+                    </div>
+                    <div className="col-md-3">
+                        <Card.Img src={metropolia} alt="Card image" />
+                    </div>
+                </div>
 
 
 
-          </div>
+            </div>
 
 
-      </div>
+        </div>
 
 
-  );
+    );
 };
 
 export default About;

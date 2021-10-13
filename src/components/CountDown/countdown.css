@@ -22,7 +22,7 @@
     padding: 1rem;
 }
 .clock section p {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 .clock section small {
     color: #000000;
@@ -64,5 +64,9 @@
     }
 }
 
-
+@media only screen and (max-width: 600px) {
+    .clock section p {
+        font-size: 2.5em;
+    }
+}
 

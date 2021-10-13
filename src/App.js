@@ -17,36 +17,34 @@ function App() {
 
   return (
       <div className="App">
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
+        <Navbar id="navbar1" collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
           <Navbar.Brand as={Link} to="/">
             <img src={plogo}
-                 alt=""
+                 alt="MediaDaylogo"
                  height="35"
-                 left="5px"
                  className="d-inline-block align-top"
             />
+
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
           <Navbar.Collapse id="responsive-navbar-nav">
 
 
             <Nav defaultActiveKey="/home" className="me-auto">
+
               <Nav.Item>
-                <Nav.Link as={Link} to="/about"><h4>Tietoja</h4></Nav.Link>
+                <Nav.Link as={Link} to="/schedule"><p className="navtext">Kalenteri</p></Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/schedule"><h4>Kalenteri</h4></Nav.Link>
+                <Nav.Link as={Link} to="/promovideo"><p className="navtext">Promo</p></Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/promovideo"><h4>Promo</h4></Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link as={Link} to="/event/live"><h4>Live</h4></Nav.Link>
+                <Nav.Link as={Link} to="/event/live"><p className="navtext">Live</p></Nav.Link>
               </Nav.Item>
             </Nav>
             <Nav>
               <Nav.Item>
-                <Nav.Link id="login" as={Link} to="/"><h4>Kirjaudu sisään</h4></Nav.Link>
+                <Nav.Link id="login" as={Link} to="/"><p className="navtext">Kirjaudu sisään</p></Nav.Link>
               </Nav.Item>
             </Nav>
 
