@@ -22,7 +22,7 @@ function App() {
       <div className="App">
         <Navbar id="navbar1" collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
           <Navbar.Brand as={Link} to="/">
-            <img src={plogo}
+            <img src={plogo} style={{marginBottom: "5px"}}
                  alt="MediaDaylogo"
                  height="35"
                  className="d-inline-block align-top"
@@ -75,7 +75,7 @@ function App() {
         <footer style={{background: "#292b2c", padding: "30px", marginTop: "15px", color: "white"}}>
           <div className="row">
             <div className="col-md-6">
-              <img src={logo}/>
+              <img src={logo} style={{marginTop: "20px", marginBottom: "25px"}}/>
             </div>
 
 
@@ -91,19 +91,19 @@ function App() {
               <p>Löydät Mediadayn lehdistötiedotteen täältä suomeksi ja englanniksi (julkaistaan 12/2021).</p>
 
               <a target="_blank" href="https://www.facebook.com/">
-                <Image
+                <Image style={{marginTop: "15px"}}
                     alt="Facebook ikoni"
                     height="53"
                     src={facebooklogo} className="facebookIcon" />
               </a>
               <a target="_blank" href="https://www.instagram.com/">
-                <Image
+                <Image style={{marginLeft: "20px", marginRight: "20px", marginTop: "15px"}}
                     alt="Instagram ikoni"
                     height="55"
                     src={instagramlogo} className="instagramIcon" />
               </a>
               <a target="_blank" href="https://twitter.com/">
-                <Image
+                <Image style={{marginTop: "15px"}}
                     alt="Twitter ikoni"
                     height="55"
                     src={twitterlogo} className="twitterIcon" />

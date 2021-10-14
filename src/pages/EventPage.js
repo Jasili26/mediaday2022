@@ -99,7 +99,7 @@ const EventPage = () => {
                       />
                   )}
                   {streamHasStarted && !streamHasEnded &&(
-                      <h2 style={{color: "black"}}>LIVE</h2>
+                      <h2 style={{color: "white"}}>LIVE</h2>
                   )}
                   {streamHasStarted && streamHasEnded &&(
                       <Video
@@ -108,10 +108,10 @@ const EventPage = () => {
                       />
                   )}
                           {streamHasStarted && streamHasEnded &&(
-                              <h2 style={{color: "black"}}>Kooste</h2>
+                              <h2 style={{color: "white"}}>Kooste</h2>
                           )}
                   {!streamHasStarted && (
-                      <p style={{color: "black"}}>Mediaday 2022</p>
+                      <p style={{color: "white"}}>Mediaday 2022</p>
                   )}
                         </>
                     )}
