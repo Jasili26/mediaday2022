@@ -74,7 +74,7 @@ const EventPage = () => {
                       <p style={{color: "black"}}>{eventResult.desc}</p>
                   )}
                   {!streamHasStarted && (
-                      <p style={{color: "black"}}>Puhe suorana lähetyksenä: {eventResult.startDate}: {eventResult.startTime} - {eventResult.endTime}</p>
+                      <p style={{color: "black"}}>Suora lähetys tulossa: {eventResult.startDate}: {eventResult.startTime} - {eventResult.endTime}</p>
                   )}
 
                     </Col>
@@ -107,9 +107,9 @@ const EventPage = () => {
                           type={eventResult.EndedType}
                       />
                   )}
-                  {streamHasStarted && streamHasEnded &&(
-                      <h2 style={{color: "black"}}>Kooste</h2>
-                  )}
+                          {streamHasStarted && streamHasEnded &&(
+                              <h2 style={{color: "black"}}>Kooste</h2>
+                          )}
                   {!streamHasStarted && (
                       <p style={{color: "black"}}>Mediaday 2022</p>
                   )}

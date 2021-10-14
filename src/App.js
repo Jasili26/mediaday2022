@@ -72,7 +72,7 @@ function App() {
 
           </Route>
         </Switch>
-        <footer style={{background: "#292b2c", padding: "30px", marginTop: "75px", color: "white"}}>
+        <footer style={{background: "#292b2c", padding: "30px", marginTop: "15px", color: "white"}}>
           <div className="row">
             <div className="col-md-6">
               <img src={logo}/>

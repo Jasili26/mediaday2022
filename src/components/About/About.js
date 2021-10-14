@@ -23,7 +23,7 @@ import plogo from "../../mediadaypng.png";
 //import Hello from "../Hello/Hello";
 const About = ({ name }) => {
 
-    document.title = "Tietoja"
+    document.title = "Mediaday 2022 Etusivu"
 
     return (
         <div className="container">
@@ -39,7 +39,7 @@ const About = ({ name }) => {
             </div>
             <Link to="event/live">
 
-                <Button variant="danger" size="lg">
+                <Button variant="danger" size="lg" style={{margin: "5px"}}>
                     LIVESTREAM
                 </Button>
 
@@ -66,7 +66,7 @@ const About = ({ name }) => {
             <header>
                 <div className="container text-center">
                     <div className="blocker">
-                        <h1 className="display-6" style={{color: "white"}}>Puhujat</h1>
+                        <h1 className="display-6" style={{color: "white", height: "55px"}}>Puhujat</h1>
                     </div>
                 </div>
             </header>
@@ -173,29 +173,29 @@ const About = ({ name }) => {
             <header>
                 <div className="container text-center">
                     <div className="blocker">
-                        <h1 className="display-6" style={{color: "white", margin: "10px"}}>Yhteistyökumppanit</h1>
+                        <h1 className="display-6" style={{color: "white", margin: "10px", height: "55px"}}>Yhteistyökumppanit</h1>
                     </div>
                 </div>
             </header>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-3">
+                    <div className="col-md-2">
                         <Card.Img src={Crestron} alt="Card image" />
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-2">
                         <Card.Img src={sony} alt="Card image" />
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-2">
                         <Card.Img src={swappie} alt="Card image" />
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-2">
                         <Card.Img src={fazer} alt="Card image" />
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-2">
                         <Card.Img src={Avita} alt="Card image" />
                     </div>
-                    <div className="col-md-3">
-                        <Card.Img src={panasonic} alt="Card image" />
+                    <div className="col-md-2">
+                        <Card.Img src={fireframe} alt="Card image" />
                     </div>
                     <div className="col-md-3">
                         <Card.Img src={trail} alt="Card image" />
@@ -204,7 +204,7 @@ const About = ({ name }) => {
                         <Card.Img src={flyar} alt="Card image" />
                     </div>
                     <div className="col-md-3">
-                        <Card.Img src={fireframe} alt="Card image" />
+                        <Card.Img src={panasonic} alt="Card image" />
                     </div>
                     <div className="col-md-3">
                         <Card.Img src={metropolia} alt="Card image" />

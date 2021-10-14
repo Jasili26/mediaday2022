@@ -6,6 +6,8 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction"; // needed for dayClick
 import "./calendar.css";
 import eventData from "../../data/events.json";
+import {Button} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 
 const Calendar = () => (
@@ -40,6 +42,13 @@ const Calendar = () => (
         };
       })}
     />
+      <Link to="event/testkooste">
+
+          <Button variant="danger" size="sm">
+              TESTI KOOSTE
+          </Button>
+
+      </Link>
   </div>
 );
 

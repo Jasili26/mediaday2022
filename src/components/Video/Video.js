@@ -6,7 +6,7 @@ import videojs from "video.js";
 import "video.js/dist/video-js.css";
 
 const Video = ({ url, type }) => {
-  document.title = "LIVE"
+  document.title = "Tapahtuma"
   const videoRef = useRef(null);
   const playerRef = useRef(null);
 

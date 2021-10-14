@@ -5,10 +5,10 @@
             "title": "Mediaday LIVE",
             "desc": "Mediatekniikka on järjestänyt säännöllisesti Mediaday-tapahtumaa, joka on koonnut laajasta media-alan yrityksiä ja opiskelijoita yhteiseen päivään. Puhujien ja yritysesittelyjen lisäksi päivä on toiminut merkittävänä mahdollisuutena verkostoitua alan ammattilaisten kanssa.",
             "name": "Mediaday 2022",
-            "pic": "https://upload.wikimedia.org/wikipedia/commons/3/33/Vanamo_Logo.png",
-            "startTime": "10:00",
-            "endTime": "15:00",
-            "startDate": "13.10.2021",
+            "pic": "https://i.imgur.com/O9RfLah.png",
+            "startTime": "8:00",
+            "endTime": "16:00",
+            "startDate": "15.10.2021",
             "placeholderVid": "https://upload.wikimedia.org/wikipedia/commons/1/12/Chillon_Castle.webm",
             "placeholderType": "video/webm",
             "streamUrl": "http://195.148.104.124:1935/jakelu/toot/playlist.m3u8",
@@ -29,7 +29,9 @@
             "placeholderVid": "https://upload.wikimedia.org/wikipedia/commons/1/12/Chillon_Castle.webm",
             "placeholderType": "video/webm",
             "streamUrl": "http://195.148.104.124:1935/jakelu/toot/playlist.m3u8",
-            "streamVideoType": "application/x-mpegURL"
+            "streamVideoType": "application/x-mpegURL",
+            "EndedVid": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Kleines_Tulpenbeet_im_Park.webm",
+            "EndedType": "video/webm"
         },
         {
             "videoUrl": "sami",
@@ -44,7 +46,9 @@
             "placeholderVid": "https://upload.wikimedia.org/wikipedia/commons/1/12/Chillon_Castle.webm",
             "placeholderType": "video/webm",
             "streamUrl": "http://195.148.104.124:1935/jakelu/toot/playlist.m3u8",
-            "streamVideoType": "application/x-mpegURL"
+            "streamVideoType": "application/x-mpegURL",
+            "EndedVid": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Kleines_Tulpenbeet_im_Park.webm",
+            "EndedType": "video/webm"
         },
         {
             "videoUrl": "franz",
@@ -58,7 +62,9 @@
             "placeholderType": "video/webm",
             "startDate": "1.4.2022",
             "streamUrl": "http://195.148.104.124:1935/jakelu/toot/playlist.m3u8",
-            "streamVideoType": "application/x-mpegURL"
+            "streamVideoType": "application/x-mpegURL",
+            "EndedVid": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Kleines_Tulpenbeet_im_Park.webm",
+            "EndedType": "video/webm"
         },
         {
             "videoUrl": "ulrich",
@@ -73,18 +79,43 @@
             "placeholderVid": "https://upload.wikimedia.org/wikipedia/commons/1/12/Chillon_Castle.webm",
             "placeholderType": "video/webm",
             "streamUrl": "http://195.148.104.124:1935/jakelu/toot/playlist.m3u8",
-            "streamVideoType": "application/x-mpegURL"
+            "streamVideoType": "application/x-mpegURL",
+            "EndedVid": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Kleines_Tulpenbeet_im_Park.webm",
+            "EndedType": "video/webm"
         },
         {
-            "videoUrl": "mika",
-            "title": "Mika Vakkilainen - Minne menet, suomalainen AV-ala?",
-            "startTime": "14:00",
-            "endTime": "15:00",
-            "startDate": "1.4.2022",
+            "videoUrl": "testlive",
+            "title": "Testi LIVE Lähetys",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "name": "TEST LIVE",
+            "topic": ".",
+            "pic": "https://i.imgur.com/O9RfLah.png",
+            "startTime": "8:00",
+            "endTime": "16:00",
+            "startDate": "14.10.2021",
             "placeholderVid": "https://upload.wikimedia.org/wikipedia/commons/1/12/Chillon_Castle.webm",
             "placeholderType": "video/webm",
             "streamUrl": "http://195.148.104.124:1935/jakelu/toot/playlist.m3u8",
-            "streamVideoType": "application/x-mpegURL"
+            "streamVideoType": "application/x-mpegURL",
+            "EndedVid": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Kleines_Tulpenbeet_im_Park.webm",
+            "EndedType": "video/webm"
+        },
+        {
+            "videoUrl": "testkooste",
+            "title": "Testi Kooste Video",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "name": "TEST KOOSTE",
+            "topic": ".",
+            "pic": "https://i.imgur.com/O9RfLah.png",
+            "startTime": "8:00",
+            "endTime": "16:00",
+            "startDate": "14.10.2020",
+            "placeholderVid": "https://upload.wikimedia.org/wikipedia/commons/1/12/Chillon_Castle.webm",
+            "placeholderType": "video/webm",
+            "streamUrl": "http://195.148.104.124:1935/jakelu/toot/playlist.m3u8",
+            "streamVideoType": "application/x-mpegURL",
+            "EndedVid": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Kleines_Tulpenbeet_im_Park.webm",
+            "EndedType": "video/webm"
         }
     ]
 
