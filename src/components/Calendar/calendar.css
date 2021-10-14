@@ -1,14 +1,14 @@
 
 a {
-    color: #0D6F3B;
+    color: #871e1e;
     text-decoration: none;
 }
 .fc-event-main {
-    background-color: #0D6F3B;
+    background-color: #871e1e;
     border: solid 1px;
 }
 .fc-event-main :hover {
-    background-color: #0b572f
+    background-color: #871717;
 }
 
 .fc .fc-col-header-cell-cushion {

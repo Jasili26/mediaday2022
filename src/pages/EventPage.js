@@ -25,7 +25,7 @@ const EventPage = () => {
 
           </Col>
         </Row>
-        <Row style={{backgroundColor: "#2cff34", margin: "2px"}}>
+        <Row style={{backgroundColor: "#871e1e", margin: "2px"}}>
           <Col md={12}>
             <WaitingForStream
               startDate={eventResult.startDate}
@@ -40,16 +40,16 @@ const EventPage = () => {
                           <img style={{margin: "15px"}} width="140px" height="140px" src={eventResult.pic}/>
                       )}
                       {streamHasStarted && (
-                          <h3 style={{color: "black"}}>{eventResult.name}</h3>
+                          <h3 style={{color: "white"}}>{eventResult.name}</h3>
                       )}
                     </Col>
                     <Col md={8}>
                       {streamHasStarted && (
-                          <h2 className="display-6" style={{color: "black", backgroundColor: "rgb(0, 0, 0, 0.1)"}}>{eventResult.title}</h2>
+                          <h2 className="display-6" style={{color: "white", backgroundColor: "rgb(0, 0, 0, 0.1)"}}>{eventResult.title}</h2>
                       )}
 
                       {streamHasStarted && (
-                          <p style={{color: "black"}}>{eventResult.desc}</p>
+                          <p style={{color: "white"}}>{eventResult.desc}</p>
                       )}
                     </Col>
 
@@ -62,19 +62,19 @@ const EventPage = () => {
                       <img style={{margin: "15px"}} width="140px" height="140px" src={eventResult.pic}/>
                   )}
                       {!streamHasStarted && (
-                          <h3 style={{color: "black"}}>{eventResult.name}</h3>
+                          <h3 style={{color: "white"}}>{eventResult.name}</h3>
                       )}
                     </Col>
                     <Col md={8}>
                       {!streamHasStarted && (
-                          <h2 className="display-6" style={{color: "black", backgroundColor: "rgb(0, 0, 0, 0.1)"}}>{eventResult.title}</h2>
+                          <h2 className="display-6" style={{color: "white", backgroundColor: "rgb(0, 0, 0, 0.1)"}}>{eventResult.title}</h2>
                       )}
 
                   {!streamHasStarted && (
-                      <p style={{color: "black"}}>{eventResult.desc}</p>
+                      <p style={{color: "white"}}>{eventResult.desc}</p>
                   )}
                   {!streamHasStarted && (
-                      <p style={{color: "black"}}>Suora lähetys tulossa: {eventResult.startDate}: {eventResult.startTime} - {eventResult.endTime}</p>
+                      <p style={{color: "white"}}>Suora lähetys tulossa: {eventResult.startDate}: {eventResult.startTime} - {eventResult.endTime}</p>
                   )}
 
                     </Col>
